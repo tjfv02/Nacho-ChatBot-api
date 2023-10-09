@@ -22,10 +22,11 @@ const openaiTest = async (data) => {
             baseURL: 'https://api.openai.com/v1/completions',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer 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`
+                'Authorization': `Bearer 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`
             },
             data: {
-                "model": "text-davinci-003",
+                // "model": "text-davinci-003",
+                "model": "davinci:ft-personal-2023-10-09-21-23-54",
                 "prompt": data.text, 
                 "temperature": 0.1,
                 "max_tokens": 500,
